@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BIDV_DEMO</string>
+    <string name="th_ng_b_o">Thông báo</string>
+    <string name="c_i_t">Cài đặt</string>
+    <string name="qu_t_qr">Quét QR</string>
+    <string name="i_qu">Đổi quà</string>
+    <string name="trang_ch">Trang chủ</string>
+    <string name="user_profile">User Profile</string>
+    <string name="qu_kh_ch">Quý khách</string>
+    <string name="ch_o_bu_i_chi_u">Xin chào</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="m_t_kh_u">Mật khẩu</string>
+    <string name="So_Dien_Thoai">Số điện thoại</string>
+    <string name="SoTaiKhoangKhongTimThay">Số tài khoản: Không tìm thấy</string>
+    <string name="SoDukhongTimThay">Số dư: không có</string>
+</resources>

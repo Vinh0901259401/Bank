@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText để nhập số điện thoại -->
+    <EditText
+        android:id="@+id/editTextPhoneNumberInternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Nhập số điện thoại"
+        android:inputType="phone"
+        android:maxLength="15"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+    <!-- TextView để hiển thị tên người dùng -->
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button để tiếp tục -->
+    <Button
+        android:id="@+id/buttonContinue_step_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiếp tục"/>
+</LinearLayout>

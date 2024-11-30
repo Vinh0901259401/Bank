@@ -1,0 +1,295 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fce4ec"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/pink30_background"
+        android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/backStepOne"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back Button"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp" />
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán an toàn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:paddingBottom="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/linear_radius">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản/Thẻ"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_eye"
+                android:contentDescription="Icon xem thông tin"
+                android:layout_marginStart="4dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Xem tất cả"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/ic_radius_khung01">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/momo"
+                    android:background="@drawable/circle_background"
+                    android:contentDescription="Ví MoMo"
+                    android:layout_margin="8dp"
+                    android:clipToOutline="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ví MoMo"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20,000 VNĐ"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHI TIẾT GIAO DỊCH"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Số tiền"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/MoneyNeedTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Người nhận"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/nameUserNeedTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Số điện thoại"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/phoneNeedTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lời nhắn"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/messageNeedTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Phí giao dịch"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:text="Miễn Phí"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Mã giao dịch"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/IDTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#888888"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="280dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Tổng tiền"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/SumMoneyNeedTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/transferButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Chuyển tiền"
+            android:textSize="18sp"
+            android:backgroundTint="#FF1493"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

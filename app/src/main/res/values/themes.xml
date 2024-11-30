@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.BIDV_DEMO" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:searchViewStyle">@style/CustomSearchView</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:searchIcon">@drawable/baseline_search_24</item>
+    </style>
+    <style name="Theme.BIDV_DEMO" parent="Base.Theme.BIDV_DEMO" />
+</resources>

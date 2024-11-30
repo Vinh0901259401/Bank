@@ -1,0 +1,267 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fce4ec"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/pink30_background"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/backStepOne"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back Button"
+                android:padding="4dp"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký mở túi tiết kiệm"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:paddingBottom="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/linear_radius">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tài khoản/Thẻ"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_eye"
+                    android:contentDescription="Icon xem thông tin"
+                    android:layout_marginStart="4dp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Xem tất cả"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số tài khoản: Không tìm thấy"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/accountBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số dư: không có số du"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="THÔNG TIN TIẾT KIỆM"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+            <LinearLayout
+                android:id="@+id/ChooseMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kỳ hạn"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/TextMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:padding="8dp"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:drawableEnd="@drawable/baseline_arrow_drop_down_24" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ChoosePhuongThucRut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phương thức rút"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/TextPhuongThucRut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:drawableEnd="@drawable/baseline_arrow_drop_down_24" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="Lãi xuất"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/TextLaiXuat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số tiền gửi (VND)"
+                    android:textColorHint="#808080"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:hintEnabled="true"
+                    app:hintAnimationEnabled="false">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/MoneyInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:inputType="number"
+                        android:textSize="13sp"
+                        android:textColor="#DE000000"
+                        android:textStyle="bold"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Lời nhắn"
+                    android:textColorHint="#808080"
+                    app:hintEnabled="true"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:hintAnimationEnabled="false">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/MessageInput_saving"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:textSize="14sp"
+                        android:text="Mở túi tiết kiệm"
+                        android:textColor="#DE000000"
+                        android:textStyle="bold"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#888888"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="260dp"/>
+        <Button
+            android:id="@+id/btnOpenSaving"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Hoàn tất mở túi"
+            android:textSize="18sp"
+            android:backgroundTint="#FF1493"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

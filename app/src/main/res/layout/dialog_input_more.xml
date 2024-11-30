@@ -1,0 +1,37 @@
+<!-- bottom_sheet_dialog.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Option 1"
+        android:textSize="18sp"
+        android:background="?attr/selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Option 2"
+        android:textSize="18sp"
+        android:background="?attr/selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Option 3"
+        android:textSize="18sp"
+        android:background="?attr/selectableItemBackground" />
+
+    <!-- Add more options as needed -->
+
+</LinearLayout>

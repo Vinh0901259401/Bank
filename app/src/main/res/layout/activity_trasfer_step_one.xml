@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/icon_back_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn người thụ hưởng"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_internal_transfer"
+            android:text="Nội bộ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_external_transfer"
+            android:text="Ngoại bộ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

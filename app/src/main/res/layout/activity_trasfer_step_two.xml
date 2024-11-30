@@ -1,0 +1,193 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fce4ec"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/pink30_background"
+        android:padding="16dp">
+
+        <!-- User Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/backStepOne"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back Button"
+                android:padding="4dp"
+                android:layout_marginEnd="8dp" />
+
+            <ImageView
+                android:id="@+id/avatarUserNeedTransfer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_profile_placeholder"
+                android:background="@drawable/circle_background"
+                android:padding="2dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/nameUserNeedTransfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/phoneUserNeedTransfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#333333" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Amount Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:background="@drawable/linear_radius">
+            <EditText
+                android:id="@+id/MoneyInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0 VNĐ"
+                android:textSize="36sp"
+                android:textColor="#333333"
+                android:textColorHint="#333333"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:inputType="number"/>
+
+            <!-- Message Input -->
+            <EditText
+                android:id="@+id/messageInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lời nhắn (0/160)"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:inputType="textMultiLine" />
+            <!-- Category Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/InputText1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:text="Tiền ăn uống"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ic_radius_bunton_xam"/>
+
+                <TextView
+                    android:id="@+id/InputText2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:text="Tiền chợ/siêu thị"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ic_radius_bunton_xam"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:backgroundTint="@color/white"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/InputText3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:text="Tiền ăn uống"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ic_radius_bunton_xam"/>
+
+                <TextView
+                    android:id="@+id/InputText4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.35"
+                    android:text="Tiền chợ/siêu thị"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/ic_radius_bunton_xam"/>
+
+                <TextView
+                    android:id="@+id/InputMore"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Khác"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/ic_radius_bunton_xam" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#888888"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="320dp"/>
+
+        <!-- Transfer Button -->
+        <Button
+            android:id="@+id/btn_nextStepThree"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Chuyển tiền"
+            android:textSize="18sp"
+            android:backgroundTint="#FF1493"
+            android:textColor="#FFFFFF"
+             />
+    </LinearLayout>
+</ScrollView>

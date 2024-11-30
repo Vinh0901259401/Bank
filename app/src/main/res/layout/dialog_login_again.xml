@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/dialog_background">
+
+    <!-- Tiêu đề đăng nhập -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ng_nh_p"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <!-- Ảnh đại diện người dùng -->
+    <FrameLayout
+        android:id="@+id/logo_container"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/circular_background"
+        android:layout_gravity="center"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user"
+            android:scaleType="centerCrop"
+            android:contentDescription="User Profile"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/NameUser_loginAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="Võ Nguyễn Hoàng Vinh"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/PhoneUser_loginAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="0901259401"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <!-- Nhập mật khẩu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/passwordIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/unlock"
+            android:paddingEnd="8dp"
+            android:layout_marginEnd="8dp"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                android:textColorHint="@color/black"
+                app:endIconMode="password_toggle">
+
+                <EditText
+                    android:id="@+id/editTextPassword_again"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Nút Đăng nhập -->
+    <Button
+        android:id="@+id/loginButton_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textStyle="bold"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp" />
+</LinearLayout>
